@@ -71,12 +71,12 @@ html{
 	height: 1%;
 }
 
-/*.modal{
+.modal{
 	display: block;
 }
 .fade{
 	opacity: 1;
-}*/
+}
 .width1{
 	width: 350px;
 }
@@ -94,7 +94,7 @@ html{
 	color: #fff;
 }
 .modal-content{
-	top: 150px;
+	top: -350px;
 }
 .close{
 	color: #fff;
@@ -114,7 +114,31 @@ html{
 textarea.form-control
 {
     overflow: auto;
-    height: 140px;
+    height: 90px;
     max-height: 250px;
     resize: vertical;
 }
+label .glyphicon{
+	top: -3px;
+	left: 3px;
+}
+.glyphicon-asterisk{
+	color: #ff0000;
+}
+.dropdown .btn{
+	margin-bottom: 20px;
+	text-align: right;
+}
+.glyphicon{
+	font-size: 8px;
+}
+.glyphicon-remove{
+	margin-right: 5px;
+	top: 0;
+}
+/*.counter{
+	padding: 6px;
+	height: 34px;
+	display: inline-block;
+	border: 1px solid #ddd;
+}*/
