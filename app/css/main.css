@@ -1,4 +1,7 @@
-body { padding-top: 70px; }
+body { 
+	padding-top: 70px;
+	height: 100%;
+ }
 
 .bluetheme {
     background: linear-gradient(to bottom, #07315C, #0C4A81);
@@ -32,9 +35,38 @@ body { padding-top: 70px; }
   	border: 1px solid #ccc;
   	border-radius: 4px;
 }
+
 .panel-table > thead > tr > th{
-	background: #eee;
+	background: linear-gradient(to bottom, #07315C, #0C4A81);
+	border-bottom: 0;
 }
+
+.panel-table > thead > tr > th> a{
+	color: #fff;
+}
+
 .table tbody tr:nth-child(2n) {
-    background: #f2f2f2;
+    background: #eee;
+}
+
+/*footer at bottom*/
+html{
+	height: 100%;
+}
+
+.wrapper{
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	height: 100%;
+}
+
+.page{
+	display: table-row;
+}
+
+.footer{
+	overflow: hidden;
+	display: table-footer-group;
+	height: 1%;
 }
