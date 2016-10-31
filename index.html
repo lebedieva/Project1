@@ -70,10 +70,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-md-offset-2">
                                 <button type="submit" class="btn btn-primary">Refresh</button>
-                            </div>
-                            <div class="col-md-2">
                                 <button type="submit" class="btn btn-primary">Norm</button>
                             </div>
                         </div>
@@ -81,7 +79,7 @@
                     <table class="table panel-table">
                         <thead>
                         <tr>
-                            <th><a href="">1</a></th>
+                            <th><button data-toggle="modal" data-target="#payee">1</button></th>
                             <th><a href="">2</a></th>
                             <th><a href="">3</a></th>
                             <th><a href="">4</a></th>
@@ -98,6 +96,38 @@
                         </tr>
                         </thead>
                         <tbody>
+                        <tr>
+                            <th><button data-toggle="modal" data-target="#copyPay">1</button></th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                        </tr>
+                        <tr>
+                            <th><button data-toggle="modal" data-target="#dealMaintenance">1</button></th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                        </tr>
                         <tr>
                             <th>1</th>
                             <th>2</th>
@@ -142,7 +172,289 @@
         </footer>
     </div>
 
+<!-- <div class="modal fade" id="payee" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog width1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5>Add Payee</h5>
+            </div>
+            <div class="modal-body">
+                <form class="common-form">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="inputPay">Payee:</label>
+                            <input type="text" required class="form-control" id="inputPay">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputType">Type:</label>
+                                    <input type="text" required class="form-control" id="inputType">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputRole">Role:</label>
+                                    <input type="text" required class="form-control" id="inputRole">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="inputDate1">Effective Date:</label>
+                            <input type="text" required class="form-control" id="inputDate1">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputDate2">Expiration Date:</label>
+                            <input type="text" required class="form-control" id="inputDate2">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
 
+<!-- <div class="modal fade" id="copyPay" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog width2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5>Copy Payee</h5>
+            </div>
+            <div class="modal-body">
+                <form class="common-form">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="inputPay">Payee:</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" required class="form-control" id="inputPay">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="inputDate1">Effective Date:</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" required class="form-control" id="inputDate1">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputDate2">Expiration Date:</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" required class="form-control" id="inputDate2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="copyDeals">Copy Deals:</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="checkbox" name="check" id="copyDeals">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Copy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="modal fade" id="dealMaintenance" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog width3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4>Deal Maintenance</h4>
+            </div>
+            <div class="modal-body">
+                <form class="common-form">
+                    <h4>Deal Criteria</h4>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label for="inputCriteria">Criteria:</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" required class="form-control" id="inputCriteria">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputCarrier">Carrier / Line:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputCarrier">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputProduct">Product:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputProduct">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputWholesaler">Wholesaler:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputWholesaler">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputBD">BD:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputBD">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputHierarchy">BD In Hierarchy:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputHierarchy">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputChannel">Channel:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputChannel">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputInternal">Internal:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputInternal">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputProducer">Producer:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputProducer">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputRecruiter">Recruiter:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputRecruiter">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputPartner">MP Partner:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputPartner">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputPayee-group">Payee Group:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputPayee-group">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputCarrier-attribute">Carrier Attribute:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputCarrier-attribute">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputProduct-attribute">Product Attribute:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputProduct-attribute">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputRole">Role:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputRole">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputBD-attribute">BD Attribute:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputBD-attribute">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputSubmit-Date">Submit Date:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputSubmit-Date">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputStatement-Date">Statement Date:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputStatement-Date">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputMSA">MSA:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputMSA">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputRecruiter-attribute">Recruiter Attribute:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" required class="form-control" id="inputRecruiter-attribute">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Notes">Notes:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="Notes"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Results -->
 

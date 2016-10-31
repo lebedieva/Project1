@@ -70,3 +70,51 @@ html{
 	display: table-footer-group;
 	height: 1%;
 }
+
+/*.modal{
+	display: block;
+}
+.fade{
+	opacity: 1;
+}*/
+.width1{
+	width: 350px;
+}
+.width2{
+	width: 440px;
+}
+.width3{
+	width: 980px;
+}
+.modal-body{
+	font-size: 13px;
+}
+.modal-header{
+	background: linear-gradient(to bottom, #07315C, #0C4A81);
+	color: #fff;
+}
+.modal-content{
+	top: 150px;
+}
+.close{
+	color: #fff;
+	opacity: 1;
+}
+.close:hover{
+	opacity: .5;
+	color: #fff;
+}
+.common-form .form-control{
+	margin-bottom: 20px;
+}
+.form-control{
+	padding: 6px;
+	font-size: 13px;
+}
+textarea.form-control
+{
+    overflow: auto;
+    height: 140px;
+    max-height: 250px;
+    resize: vertical;
+}
