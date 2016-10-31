@@ -15,3 +15,26 @@ body { padding-top: 70px; }
     margin-top: 8px;
     margin-bottom: 3px;
 }
+
+.btn-radius{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.btn-primary{
+	padding: 6px 12px;
+  	font-size: 14px;
+  	font-weight: normal;
+  	line-height: 1;
+  	color: #555;
+  	text-align: center;
+  	background-color: #eee;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+}
+.panel-table > thead > tr > th{
+	background: #eee;
+}
+.table tbody tr:nth-child(2n) {
+    background: #f2f2f2;
+}
