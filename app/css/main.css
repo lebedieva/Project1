@@ -1,0 +1,17 @@
+body { padding-top: 70px; }
+
+.bluetheme {
+    background: linear-gradient(to bottom, #07315C, #0C4A81);
+    font-family: 'Cinzel', serif;
+}
+
+.bluetheme .navbar-brand {
+    padding: 5px;
+}
+
+.whitetext {
+    color: white;
+    font-size: 26px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
