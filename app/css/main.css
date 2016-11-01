@@ -71,12 +71,6 @@ html{
 	height: 1%;
 }
 
-/*.modal{
-	display: block;
-}
-.fade{
-	opacity: 1;
-}*/
 .width1{
 	width: 350px;
 }
@@ -86,6 +80,9 @@ html{
 .width3{
 	width: 980px;
 }
+.width4{
+	width: 1350px;
+}
 .modal-body{
 	font-size: 13px;
 }
@@ -93,9 +90,6 @@ html{
 	background: linear-gradient(to bottom, #07315C, #0C4A81);
 	color: #fff;
 }
-/*.modal-content{
-	top: 350px;
-}*/
 .close{
 	color: #fff;
 	opacity: 1;
@@ -117,6 +111,9 @@ textarea.form-control
     height: 90px;
     max-height: 250px;
     resize: vertical;
+}
+.modal-payee-details textarea.form-control{
+	height: 140px;
 }
 label .glyphicon{
 	top: -3px;
@@ -164,6 +161,3 @@ label .glyphicon{
 .counter.slash:after{
 	left: -7px;
 }
-/*.form-deal-criteria label{
-	margin-left: 20px;
-}*/

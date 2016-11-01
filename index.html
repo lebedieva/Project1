@@ -229,24 +229,24 @@
                 <form class="common-form">
                     <div class="row">
                         <div class="col-md-3">
-                            <label for="inputPay">Payee:</label>
+                            <label for="inputPay2">Payee:</label>
                         </div>
                         <div class="col-md-9">
-                            <input type="text" required class="form-control" id="inputPay">
+                            <input type="text" required class="form-control" id="inputPay2">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3">
-                            <label for="inputDate1">Effective Date:</label>
+                            <label for="inputDate3">Effective Date:</label>
                         </div>
                         <div class="col-md-3">
-                            <input type="text" required class="form-control" id="inputDate1">
+                            <input type="text" required class="form-control" id="inputDate3">
                         </div>
                         <div class="col-md-3">
-                            <label for="inputDate2">Expiration Date:</label>
+                            <label for="inputDate4">Expiration Date:</label>
                         </div>
                         <div class="col-md-3">
-                            <input type="text" required class="form-control" id="inputDate2">
+                            <input type="text" required class="form-control" id="inputDate4">
                         </div>
                     </div>
                     <div class="row">
@@ -389,11 +389,11 @@
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <label for="inputRole">Role:</label>
+                            <label for="inputRole2">Role:</label>
                         </div>
                         <div class="col-md-4">
                             <div class="dropdown">
-                                <button type="button" id="inputRole" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button type="button" id="inputRole2" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="glyphicon glyphicon-remove"></span><span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
@@ -739,23 +739,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="row text-right">
-                                <div class="col-md-4">
-                                    <label for="inputPay-index">Pay Index:</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="dropdown">
-                                        <button type="button" id="inputPay-index" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="glyphicon glyphicon-remove"></span><span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Criteria</a></li>
-                                            <li><a href="#">AFMO</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -919,10 +903,10 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <label for="inputRecruiter">Recruiter CR/DR:</label>
+                                    <label for="inputRecruiter2">Recruiter CR/DR:</label>
                                 </div>
                                 <div class="col-md-2">
-                                    <input type="text" class="form-control" id="inputRecruiter">
+                                    <input type="text" class="form-control" id="inputRecruiter2">
                                 </div>
                                 <div class="col-md-2">
                                     <div class="slash">
@@ -942,47 +926,193 @@
     </div>
 </div>
 
-
 <div class="modal fade" id="payee-details" tabindex="-1" role="dialog"  aria-hidden="true">
-    <div class="modal-dialog width3">
+    <div class="modal-dialog width4 modal-payee-details">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h5>Add Payee</h5>
+                <h5>Payee Details</h5>
             </div>
             <div class="modal-body">
                 <form class="common-form">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="inputPay">Payee:</label>
-                            <input type="text" required class="form-control" id="inputPay">
+                    <div class="row  text-right">
+                        <div class="col-md-1">
+                            <label for="inputPayee">Payee:</label>
                         </div>
-                        <div class="col-md-8">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="inputType">Type:</label>
-                                    <input type="text" required class="form-control" id="inputType">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="inputRole">Role:</label>
-                                    <input type="text" required class="form-control" id="inputRole">
-                                </div>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="inputPayee">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="inputType2">Type:</label>
+                        </div>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="inputType2">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="inputRole3">Role:</label>
+                        </div>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="inputRole3">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="inputModel">Model:</label>
+                            <input type="checkbox" name="check" id="inputModel">
+                        </div>
+                         <div class="col-md-1">
+                            <label for="inputDoNotPay">DoNotPay:</label>
+                            <input type="checkbox" name="check" id="inputDoNotPay">
+                         </div>
+                    </div>
+                    <div class="row  text-right">
+                        <div class="col-md-1">
+                            <label for="inputEffective-date">Effective Date:</label>
+                        </div>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="inputEffective-date">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="inputExpiration-date">Expiration Date:</label>
+                        </div>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="inputExpiration-date">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputPublished">Published:</label>
+                            <input type="checkbox" name="check" id="inputPublished">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputPay-group">Payee Group:</label>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dropdown">
+                                <button type="button" id="inputPay-group" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Criteria</a></li>
+                                    <li><a href="#">AFMO</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                     <div class="row  text-right">
                         <div class="col-md-6">
-                            <label for="inputDate1">Effective Date:</label>
-                            <input type="text" required class="form-control" id="inputDate1">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="inputModel2">Model:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <button type="button" id="inputModel2" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Criteria</a></li>
+                                            <li><a href="#">AFMO</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="inputDeductions">Deductions:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <button type="button" id="inputDeductions" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Criteria</a></li>
+                                            <li><a href="#">AFMO</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="inputPay-index">Pay Index:</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="dropdown">
+                                        <button type="button" id="inputPay-index" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Criteria</a></li>
+                                            <li><a href="#">AFMO</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputBlacksmith">Blacksmith:</label>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="dropdown">
+                                        <button type="button" id="inputBlacksmith" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Criteria</a></li>
+                                            <li><a href="#">AFMO</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <label for="inputCOC">COC Pct:</label>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="dropdown">
+                                        <button type="button" id="inputCOC" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Criteria</a></li>
+                                            <li><a href="#">AFMO</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-offset-8 col-md-2">
+                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <label for="inputDate2">Expiration Date:</label>
-                            <input type="text" required class="form-control" id="inputDate2">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputNotes">Notes:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea class="form-control" id="inputNotes"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-offset-10 col-md-2">
+                                    <button type="submit" class="btn btn-default">Copy</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Add</button>
-                    </div>
+                     </div>
                 </form>
             </div>
         </div>
@@ -992,7 +1122,7 @@
 
 
 
-<script src="js/jquery.js"/></script>
+<script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/angular.js"></script>
 <script src="js/angular-ui-router.js"></script>
