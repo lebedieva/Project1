@@ -71,12 +71,12 @@ html{
 	height: 1%;
 }
 
-.modal{
+/*.modal{
 	display: block;
 }
 .fade{
 	opacity: 1;
-}
+}*/
 .width1{
 	width: 350px;
 }
@@ -93,9 +93,9 @@ html{
 	background: linear-gradient(to bottom, #07315C, #0C4A81);
 	color: #fff;
 }
-.modal-content{
-	top: -350px;
-}
+/*.modal-content{
+	top: 350px;
+}*/
 .close{
 	color: #fff;
 	opacity: 1;
@@ -136,9 +136,34 @@ label .glyphicon{
 	margin-right: 5px;
 	top: 0;
 }
-/*.counter{
-	padding: 6px;
+.slash{
+	position: relative;
+}
+.slash:after{
+	content: '/';
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+.counter{
+	width: 20px;
 	height: 34px;
 	display: inline-block;
 	border: 1px solid #ddd;
+	position: absolute;
+	z-index: 1;
+	right: -27px; 
+	top: 0;
+}
+.wrapper-group{
+	position: relative;
+}
+.counter.slash:after{
+	left: -7px;
+}
+/*.form-deal-criteria label{
+	margin-left: 20px;
 }*/

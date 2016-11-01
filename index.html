@@ -11,9 +11,9 @@
 
     <div class="wrapper">
         <div class="page">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="col-lg-12"><nav class="navbar bluetheme navbar-fixed-top">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                                 <span class="sr-only">Toggle navigation</span>
@@ -41,7 +41,7 @@
                 </nav></div>
             </div>
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
@@ -129,7 +129,7 @@
                             <th>14</th>
                         </tr>
                         <tr>
-                            <th>1</th>
+                            <th><button data-toggle="modal" data-target="#payee-details">1</button></th>
                             <th>2</th>
                             <th>3</th>
                             <th>4</th>
@@ -166,13 +166,13 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="copyright text-center">© 2016 - WealthVest Deal System</div>
             </div>
         </footer>
     </div>
 
-<!-- <div class="modal fade" id="payee" tabindex="-1" role="dialog"  aria-hidden="true">
+<div class="modal fade" id="payee" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog width1">
         <div class="modal-content">
             <div class="modal-header">
@@ -216,9 +216,9 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
-<!-- <div class="modal fade" id="copyPay" tabindex="-1" role="dialog"  aria-hidden="true">
+<div class="modal fade" id="copyPay" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog width2">
         <div class="modal-content">
             <div class="modal-header">
@@ -264,7 +264,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <div class="modal fade" id="dealMaintenance" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog width3">
@@ -300,17 +300,20 @@
                             <label for="inputCarrier">Carrier / Line:</label>
                         </div>
                         <div class="col-md-4">
-                            <div class="dropdown">
-                                <button type="button" id="inputCarrier" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="glyphicon glyphicon-remove"></span><span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Criteria</a></li>
-                                    <li><a href="#">AFMO</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
+                            <div class="wrapper-group">
+                                <div class="dropdown">
+                                    <button type="button" id="inputCarrier" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-remove"></span><span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Criteria</a></li>
+                                        <li><a href="#">AFMO</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <span class="counter slash"></span>
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -460,7 +463,7 @@
                         <div class="col-md-2">
                             <label for="inputSubmit-Date">Submit Date:</label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <input type="text" required class="form-control" id="inputSubmit-Date">
                         </div>
                     </div>
@@ -485,7 +488,7 @@
                         <div class="col-md-2">
                             <label for="inputStatement-Date">Statement Date:</label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <input type="text" required class="form-control" id="inputStatement-Date">
                         </div>
                     </div>
@@ -762,7 +765,7 @@
                                 <div class="col-md-4">
                                     <label for="inputPct-gross">Pct Gross:</label>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <input type="text" class="form-control" id="inputPct-gross">
                                 </div>
                             </div>
@@ -770,7 +773,7 @@
                                 <div class="col-md-4">
                                     <label for="inputPct-premium">Pct Premium:</label>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <input type="text" class="form-control" id="inputPct-premium">
                                 </div>
                             </div>
@@ -778,7 +781,7 @@
                                 <div class="col-md-4">
                                     <label for="inputPct-override">Pct Override:</label>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <input type="text" class="form-control" id="inputPct-override">
                                 </div>
                             </div>
@@ -786,7 +789,7 @@
                                 <div class="col-md-4">
                                     <label for="inputPct-carrier">Pct Carrier Level:</label>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <input type="text" class="form-control" id="inputPct-carrier">
                                 </div>
                             </div>
@@ -794,8 +797,24 @@
                                 <div class="col-md-4">
                                     <label for="inputPct-wholesaler">Pct Wholesaler Net:</label>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <input type="text" class="form-control" id="inputPct-wholesaler">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputContingent-bonus">Contingent Bonus:</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="inputContingent-bonus">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputYear">Year End Bonus:</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="inputYear">
                                 </div>
                             </div>
                         </div>
@@ -838,14 +857,137 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row text-right">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <h5>Bonus</h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="inputAmount1">Amount 1:</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="inputAmount1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="inputAmount2">Amount 2:</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="inputAmount2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="inputAmount3">Amount 3:</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="inputAmount3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <h5>Push COC</h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="inputRate1">Rate 1:</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="inputRate1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="inputRate2">Rate 2:</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="inputRate2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="inputRate3">Rate 3:</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" id="inputRate3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputRecruiter">Recruiter CR/DR:</label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control" id="inputRecruiter">
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="slash">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-default">Save</button>
+                        </div>
+                    </div>
+                
                 </form>
             </div>
         </div>
     </div>
 </div>
 
+
+<div class="modal fade" id="payee-details" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog width3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5>Add Payee</h5>
+            </div>
+            <div class="modal-body">
+                <form class="common-form">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="inputPay">Payee:</label>
+                            <input type="text" required class="form-control" id="inputPay">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputType">Type:</label>
+                                    <input type="text" required class="form-control" id="inputType">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputRole">Role:</label>
+                                    <input type="text" required class="form-control" id="inputRole">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="inputDate1">Effective Date:</label>
+                            <input type="text" required class="form-control" id="inputDate1">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputDate2">Expiration Date:</label>
+                            <input type="text" required class="form-control" id="inputDate2">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
         <!-- Results -->
 
 
